@@ -22,14 +22,15 @@ public class LanguageProcessor {
     private final Tokenizer tokenizer;
 
     public LanguageProcessor() {
-        try (InputStream modelIn = new FileInputStream(NLP_TOKEN_MODEL)) {
+
+        try (InputStream modelIn = getClass().getClassLoader().getResourceAsStream(NLP_TOKEN_MODEL)) {
             TokenizerModel model = new TokenizerModel(modelIn);
             this.tokenizer = new TokenizerME(model);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        try (InputStream modelIn = new FileInputStream(NLP_POS_MODEL)) {
+        try (InputStream modelIn = getClass().getClassLoader().getResourceAsStream(NLP_POS_MODEL)) {
             POSModel posModel = new POSModel(modelIn);
             this.tagger = new POSTaggerME(posModel);
         } catch (IOException e) {
