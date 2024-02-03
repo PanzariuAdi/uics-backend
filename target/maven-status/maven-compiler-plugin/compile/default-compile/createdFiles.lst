@@ -1,10 +1,10 @@
 uaic\ro\UICS\languageProcessor\Node.class
+uaic\ro\UICS\controller\InputController.class
+uaic\ro\UICS\services\LanguageService.class
+uaic\ro\UICS\config\SparqlConfiguration.class
+uaic\ro\UICS\languageProcessor\LanguageNode.class
 uaic\ro\UICS\utils\GraphUtils.class
 uaic\ro\UICS\UicsApplication.class
 uaic\ro\UICS\config\WebConfig.class
-uaic\ro\UICS\controller\InputController.class
 uaic\ro\UICS\languageProcessor\LanguageProcessor.class
-uaic\ro\UICS\services\LanguageService.class
 uaic\ro\UICS\sparql\SparqlQueryExecutor.class
-uaic\ro\UICS\config\SparqlConfiguration.class
-uaic\ro\UICS\languageProcessor\LanguageNode.class
